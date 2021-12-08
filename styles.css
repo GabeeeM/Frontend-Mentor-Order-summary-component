@@ -7,9 +7,116 @@
 }
 
 body {
-    background-image: ;
+    background-image: url("images/pattern-background-desktop.svg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--paleBlue)
 }
 
+.card {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card img {
+    height: 100%;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card h1 {
+    font-weight: 900;
+    padding-top: 25px;
+}
+
+.card .text {
+    font-size: 16px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    color: var(--desaturatedBlue);
+}
+
+.card .plan img {
+    height: 50px;
+    width: 50px;
+}
+.card .plan {
+    display: flex;
+    background-color: var(--veryPaleBlue);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card .plan .leftSide {
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+    padding-right: 150px;
+}
+
+.card .plan .leftSide h2 {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.card .plan .leftSide p {
+    color: var(--desaturatedBlue);
+}
+
+.card .plan a {
+    padding-top: 20px;
+    color: var(--brightBlue);
+}
+
+.card .plan a:hover {
+    text-decoration: none;
+    color: var(--desaturatedBlue);
+}
+
+.card .proceed {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    background-color: var(--brightBlue);
+}
+
+.card .poopeed {
+    text-decoration: none;
+    color: white;
+}
+
+.card .poopeed .proceed:hover {
+    background-color: var(--desaturatedBlue);
+}
+
+.card .cancel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card .cancel a {
+    text-decoration: none;
+    color: var(--desaturatedBlue);
+}
+
+.card .cancel a:hover {
+    color: var(--darkBlue);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
